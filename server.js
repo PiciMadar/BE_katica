@@ -39,6 +39,6 @@ app.use('/statistics', statistics)
 
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('Server listening on http://localhost:3000')
 });
