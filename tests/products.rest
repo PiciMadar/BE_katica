@@ -1,0 +1,24 @@
+@host = http://localhost
+@port = 3000
+
+@url  =  {{host}}:{{port}}
+
+### GET ALL PRODUCTS
+GET {{url}}/products
+Content-Type: application/json
+
+### POST one PRODUCT
+POST {{url}}/products
+Content-Type: application/json
+
+{
+    "termekID" : 1,
+    "termek" : "Krumplis tészta",
+    "katergoriaNev" : "Etel",
+    "egyseg" : "kg",
+    "nettoAr" : 200
+}
+
+### DELETE one PRODUCT by id
+DELETE {{url}}/products/1
+Content-Type: application/json

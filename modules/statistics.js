@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../utils/database');
+const {query} = require('../utils/database');
 
 router.get('/', (req, res) => {
     const summaryQuery = `
@@ -21,10 +21,10 @@ router.get('/', (req, res) => {
       GROUP BY termek;
     `;
   
-    pool.query(summaryQuery, (err, summaryResult) => {
+    query(summaryQuery, [], (err, summaryResult) => {
       if (err) return res.status(500).json({ error: err.message });
   
-      pool.query(productQuery, (err2, productResults) => {
+      query(productQuery, (err2, productResults) => {
         if (err2) return res.status(500).json({ error: err2.message });
   
         const stats = {

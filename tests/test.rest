@@ -10,16 +10,16 @@ GET {{url}}/categories
 Content-Type: application/json
 
 ### GET one categorie by id
-GET http://localhost:3000/categories/2
+GET {{url}}/categories/2
 Content-Type: application/json
 
 
 ### DELETE one categorie by id
-DELETE http://localhost:3000/categories/3
+DELETE {{url}}/categories/3
 Content-Type: application/json
 
 ### POST one category
-POST http://localhost:3000/categories
+POST {{url}}/categories
 Content-Type: application/json
 
 {
@@ -27,7 +27,7 @@ Content-Type: application/json
 }
 
 ### UPDATE one category
-PATCH  http://localhost:3000/categories/5
+PATCH  {{url}}/categories/5
 Content-Type: application/json
 
 {
@@ -37,16 +37,16 @@ Content-Type: application/json
 //------------------------------------------------------------------
 
 ### GET trafics
-GET http://localhost:3000/trafics
+GET {{url}}/trafics
 Content-Type: application/json
 
 
 ### GET trafic by id
-GET http://localhost:3000/trafics/246
+GET {{url}}/trafics/246
 Content-Type: application/json
 
 ### POST one trafic
-POST http://localhost:3000/trafics
+POST {{url}}/trafics
 Content-Type: application/json
 
 {
@@ -60,12 +60,12 @@ Content-Type: application/json
 }
 
 ### DELETE one trafic by id
-DELETE http://localhost:3000/trafics/263
+DELETE {{url}}/trafics/263
 Content-Type: application/json
 
 
 ### UPDATE one category
-PATCH  http://localhost:3000/trafics/251
+PATCH  {{url}}/trafics/251
 Content-Type: application/json
 
 {
@@ -77,5 +77,5 @@ Content-Type: application/json
 
 
 ### Get  statistics
-GET http://localhost:3000/statistics
+GET {{url}}/statistics
 Content-Type: application/json

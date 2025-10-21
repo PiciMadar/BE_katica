@@ -1,0 +1,21 @@
+@host = http://localhost
+@port = 3000
+
+@url  =  {{host}}:{{port}}
+
+### GET ALL CUSTOMER
+GET {{url}}/costumer
+Content-Type: application/json
+
+### POST one CUSTOMER
+POST {{url}}/costumer
+Content-Type: application/json
+
+{
+    "vevoID" : 1,
+    "vevoNev" : "Ohradkás miújság"
+}
+
+### DELETE one CUSTOMER by id
+DELETE {{url}}/costumer/1
+Content-Type: application/json
